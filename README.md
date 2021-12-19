@@ -1,6 +1,46 @@
-# rumbletalk-sdk-php
-[RumbleTalk](https://rumbletalk.com) - the current RumbleTalk API Client Library for PHP
-A real time enterprise chat solution which can be integrated into any PHP website
+# RumbleTalk API Client Library for PHP
+
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.4-8892BF)](https://www.php.net/supported-versions.php)
+[![License](https://poser.pugx.org/rumbletalk/rumbletalk-sdk-php/license)](https://packagist.org/packages/rumbletalk/rumbletalk-sdk-php)
+<!--[![Latest Stable Version](https://img.shields.io/packagist/v/rumbletalk/rumbletalk-sdk-php)](https://packagist.org/packages/rumbletalk/rumbletalk-sdk-php)-->
+<!--[![Total Downloads](https://poser.pugx.org/rumbletalk/rumbletalk-sdk-php/downloads)](https://packagist.org/packages/rumbletalk/rumbletalk-sdk-php)-->
+
+This project hosts the PHP client library for the [RumbleTalk
+API](https://dev.rumbletalk.com/rest).
+
+## Requirements
+* This library depends on the [PHP cURL extension](https://www.php.net/curl), which depends on [cURL](https://curl.se/).
+* It is requires the [json extension](https://www.php.net/manual/en/book.json.php), which is bundled and compiled into PHP by default.
+* PHP >= 5.4
+* `[recommended]` Composer >= 2.0; Composer is not required by recommended.
+  * If you don't want to use Composer, simply download the `src/*` folder into your project and use your own autoloader
+
+## Getting started
+First, install the library using composer:
+
+    composer require rumbletalk/rumbletalk-sdk-php
+
+Then require your autoloader, and use the client as such:
+
+    require 'vendor/autoload.php';
+    
+    use RumbleTalk\RumbleTalkClient;
+    
+    $appKey = 'YOUR_TOKEN_KEY';
+    $appSecret = 'YOUR_TOKEN_SECRET';
+    
+    # create the RumbleTalk SDK instance using the key and secret
+    $rumbletalk = new RumbleTalkClient($appKey, $appSecret);
+    
+    # fetch (and set) the access token for the account (tokens lasts for 30 days)
+    $rumbletalk->fetchAccessToken();
+    
+    # use the $rumbletalk client to access the API endpoints
+    # see examples/*.php for the different usages
+
+* Make sure you replace `YOUR_TOKEN_KEY` and `YOUR_TOKEN_SECRET` with your values.
+* See our dev site [Authentication](https://dev.rumbletalk.com/rest/authentication#authenticationRegular) page for
+instructions on how to get the token key and secret
 
 ## Common uses
 * Members chat room
