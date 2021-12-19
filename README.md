@@ -1,5 +1,5 @@
 # rumbletalk-sdk-php
-[RumbleTalkl](https://rumbletalk.com), the current RumbleTalk API Client Library for PHP
+[RumbleTalk](https://rumbletalk.com) - the current RumbleTalk API Client Library for PHP
 A real time enterprise chat solution which can be integrated into any PHP website
 
 ## Common uses
