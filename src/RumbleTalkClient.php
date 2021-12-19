@@ -34,7 +34,7 @@ class RumbleTalkClient
     private $connectTimeout = 30;
 
     /** @var string the SDK user agent */
-    private $useragent = 'rumbletalk-sdk-php-v0.47';
+    private $useragent = 'rumbletalk-sdk-php-v0.5.0';
 
     /** @var string the app key */
     private $key;
