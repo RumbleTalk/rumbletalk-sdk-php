@@ -1,7 +1,6 @@
 <?php
 
 /**
- * Last updated at 18-DEC-2021
  * See more about the [open] resources routes here:
  * https://dev.rumbletalk.com/rest/resources
  */

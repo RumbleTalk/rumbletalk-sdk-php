@@ -1,7 +1,6 @@
 <?php
 
 /**
- * Last updated at 18-DEC-2021
  * See more about the authentication route here:
  * https://dev.rumbletalk.com/rest/authentication
  */
