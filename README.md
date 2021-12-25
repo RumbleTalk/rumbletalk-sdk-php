@@ -2,7 +2,7 @@
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.4-8892BF)](https://www.php.net/supported-versions.php)
 [![License](https://poser.pugx.org/rumbletalk/rumbletalk-sdk-php/license)](https://packagist.org/packages/rumbletalk/rumbletalk-sdk-php)
-<!--[![Latest Stable Version](https://img.shields.io/packagist/v/rumbletalk/rumbletalk-sdk-php)](https://packagist.org/packages/rumbletalk/rumbletalk-sdk-php)-->
+[![Latest Stable Version](https://img.shields.io/packagist/v/rumbletalk/rumbletalk-sdk-php)](https://packagist.org/packages/rumbletalk/rumbletalk-sdk-php)
 <!--[![Total Downloads](https://poser.pugx.org/rumbletalk/rumbletalk-sdk-php/downloads)](https://packagist.org/packages/rumbletalk/rumbletalk-sdk-php)-->
 
 This project hosts the PHP client library for the [RumbleTalk API](https://dev.rumbletalk.com/rest).
