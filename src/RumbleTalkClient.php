@@ -81,30 +81,6 @@ class RumbleTalkClient
     }
 
     /**
-     * creates a new RumbleTalk account
-     * @param array $data
-     * @return array the response from the server
-     *      boolean status true on success
-     *      integer accountId the id of the account
-     *      integer chatId the id of the first chat in the account
-     *      string hash the public id of the first chat in the account
-     *      array token the account token (array of key and secret)
-     * @throws Exception when email or password is invalid
-     */
-    public function createAccount(array $data)
-    {
-        if (!$this->validateEmail($data['email'])) {
-            throw new Exception('invalid email address supplied', 400);
-        }
-
-        if (isset($data['password']) && !$this->validatePassword($data['password'])) {
-            throw new Exception('invalid password supplied', 400);
-        }
-
-        return $this->httpRequest('POST', 'accounts', $this->accessToken, $data);
-    }
-
-    /**
      * sets the instance's token; also removes the instance's access token
      * @param $key - the token key
      * @param $secret - the token secret
