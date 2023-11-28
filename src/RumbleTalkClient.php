@@ -156,7 +156,11 @@ class RumbleTalkClient
         $response = $this->httpRequest('POST', "{$extendRoute}token", null, $data);
 
         if (@$response['status'] != true) {
-            throw new Exception("Error receiving access token: {$response['message']}", 400);
+            $errorMessage = 'Error receiving access token.';
+            if (!empty($response['message'])) {
+                $errorMessage .= ' ' . $response['message'];
+            }
+            throw new Exception($errorMessage, 400);
         }
         $this->accessToken = $response['token'];
 
