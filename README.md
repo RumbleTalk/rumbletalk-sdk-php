@@ -14,8 +14,7 @@ This project hosts the PHP client library for the [RumbleTalk API](https://dev.r
   PHP by default.
 * PHP >= 5.4
 * `[recommended]` Composer >= 2.0; Composer is not required but recommended.
-    * If you don't want to use Composer, simply download the `src/*` folder into your project and use your own
-      autoloader
+    * If you don't want to use Composer, simply download the `src/*` folder into your project and use your own autoloader.
 
 ## Getting started
 
